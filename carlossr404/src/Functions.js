@@ -1,36 +1,34 @@
 import Carousel from 'react-bootstrap/Carousel';
+import './App.css'
 
 export function Banner(){
     return(
         <Carousel data-bs-theme="dark">
             <Carousel.Item>
                 <img 
-                src="blank.jpg"
-                alt='First Slide'
-                width="1000"
-                height="500"/>
+                className='CarouselImage'
+                src='blank.jpg'
+                alt='First Slide'/>
                 <Carousel.Caption>
-                    <h0>Slide 1</h0>
+                    <h0>Experience</h0>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img 
+                className='CarouselImage'
                 src='blank.jpg'
-                alt='Second Slide'
-                width="1000"
-                height="500"/>
+                alt='Second Slide'/>
                 <Carousel.Caption>
-                    <h1>Slide 2</h1>
+                    <h1>Publications</h1>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img 
+                className='CarouselImage'
                 src='blank.jpg'
-                alt='Third Slide'
-                width="1000"
-                height="500"/>
+                alt='Third Slide'/>
                 <Carousel.Caption>
-                    <h1>Slide 3</h1>
+                    <h1>Community Involvement</h1>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
