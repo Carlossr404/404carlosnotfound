@@ -6,7 +6,7 @@ export function Banner(){
         <Carousel data-bs-theme="dark">
             <Carousel.Item>
                 <img 
-                className='CarouselImage'
+                className='Carousel-image'
                 src='blank.jpg'
                 alt='First Slide'/>
                 <Carousel.Caption>
@@ -15,7 +15,7 @@ export function Banner(){
             </Carousel.Item>
             <Carousel.Item>
                 <img 
-                className='CarouselImage'
+                className='Carousel-image'
                 src='blank.jpg'
                 alt='Second Slide'/>
                 <Carousel.Caption>
@@ -24,7 +24,7 @@ export function Banner(){
             </Carousel.Item>
             <Carousel.Item>
                 <img 
-                className='CarouselImage'
+                className='Carousel-image'
                 src='blank.jpg'
                 alt='Third Slide'/>
                 <Carousel.Caption>
