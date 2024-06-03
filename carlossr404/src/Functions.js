@@ -19,7 +19,7 @@ export function Banner(){
                 src='blank.jpg'
                 alt='Second Slide'/>
                 <Carousel.Caption>
-                    <h1>Publications</h1>
+                    <h1>Community Involvement</h1>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -28,7 +28,16 @@ export function Banner(){
                 src='blank.jpg'
                 alt='Third Slide'/>
                 <Carousel.Caption>
-                    <h1>Community Involvement</h1>
+                    <h1>Projects</h1>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img 
+                className='Carousel-image'
+                src='blank.jpg'
+                alt='Third Slide'/>
+                <Carousel.Caption>
+                    <h1>Publications</h1>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
