@@ -3,6 +3,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
   min-height: 100vh;
+  padding-left: 2.5vmin;
+  padding-right: 2.5vmin;
 }
 
 .App-logo {
@@ -17,20 +19,34 @@
 }
 
 .App-header {
-  margin: 0px 0px 0px 0px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
+  position: sticky;
+  top: 0;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.Carousel-image{
+.Carousel-image {
   width: 100vmin;
   height: 40vmin;
+}
+
+.h2 {
+  text-decoration: underline;
+}
+
+.experience-block {
+  justify-content: left;
+  min-width: 70vmin;
+}
+
+.experience-img {
+  justify-content: right;
 }
 
 @keyframes App-logo-spin {

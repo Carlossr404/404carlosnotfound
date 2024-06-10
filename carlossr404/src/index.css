@@ -23,3 +23,14 @@ code {
   display: flex;
   justify-content: center;
 }
+
+.exp-block{
+  padding-top: 2.5vmin;
+}
+
+.logo{
+  height: 7.5%;
+  width: 7.5%;
+  padding-right: 2.5vmin;
+  vertical-align: center;
+}

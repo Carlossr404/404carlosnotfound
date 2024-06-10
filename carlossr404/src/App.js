@@ -1,28 +1,85 @@
 import './App.css';
-import {Banner} from './Functions.js'
+import {Banner, Experience} from './Functions.js'
 
 
 function App() {
 
+  //Variables
+  //Clinical Information Specialist Experience descriptions
+  const desc_CIS = [
+    "Leveraged Oak Street Health's population health tools to support clinical documentation improvement",
+    "Successfully provided accurate and timely patient visit documentation through Greenway and Canopy, preferred Electronic Medical Record (EMR) programs, in a structured note",
+    "Ensured appropriate billing",
+    "Participated in weekly 'Careteam Meetings' to discuss quality metrics and areas of improvement"
+  ];
+
+  //MOVE-IT Lab Coordinator Experience descriptions
+  const desc_MOVEIT = [
+    "Calibrated and maintained Motive's Motion Caputure System by OptiTrack",
+    "Ensured... "
+  ];
+
+  //Visiting Researcher Expereince descriptions
+  const desc_VISITING = [
+    ". . . "
+  ];
 
   return (
     <div className="App">
+
       <h1 className='App-header'>
+        <div style={{textAlign: 'left'}} onClick={() => window.location.replace("/#home")}>Carlossr404</div>
       </h1>
-      <Banner/>
+
+      <Banner id="home"/>
+      
       <p>
-        <h2>Bio</h2>
+        <h2 className='h2'>Bio</h2>
         <div>This is a small bio about me (Carlos)</div>
       </p>
+
       <p>
-        <h2 id="exp">Experience</h2>
+        <h2 id="exp" className='h2'>Experience</h2>
+        <div className='experience-block'>
+          <Experience 
+          logo={'osh_logo.jpeg'}
+          title={"Clinical Information Specialist"} 
+          company={"Oak Street Health"}
+          location={"Houston, TX"}
+          date={"August 2023 - Present"}
+          desc={desc_CIS} />
+          <Experience
+          logo={'rhodes_logo.jpeg'}
+          title={"MOVE-IT Lab Coordinator"}
+          company={"Rhodes College"}
+          location={"Memphis, TN"}
+          date={"August 2022 - May 2023"}
+          desc={desc_MOVEIT} />
+          <Experience
+          logo={'vandy_logo.jpeg'}
+          title={"Visiting Researcher"}
+          company={"Vanderbilt University"}
+          location={"Nashville, TN"}
+          date={"June 2021 - August 2021"}
+          desc={desc_VISITING}/>
+        </div>
+        <img src="" className='experience-img'/>
       </p>
+
       <p>
-        <h2 id="projects">Projects</h2>
+        <h2 id="projects" className='h2'>Projects</h2>
       </p>
+
       <p>
-        <h2 id="pubs">Publications</h2>
+        <h2 id="pubs" className='h2'>Publications</h2>
+        <div>
+          <a href='https://dl.acm.org/doi/abs/10.1145/3449067'>Estimating Distance in Action Space in Augmented Reality</a>
+        </div>
+        <div>
+          <a href='https://ieeexplore.ieee.org/abstract/document/8798095'>Distance Judgments to On- and Off Ground Objects in Augmented Reality</a>
+        </div>  
       </p>
+
     </div>
   );
 }
