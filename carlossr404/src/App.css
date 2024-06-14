@@ -3,7 +3,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
   min-height: 100vh;
-
 }
 
 .App-logo {
@@ -43,10 +42,23 @@
 .experience-block {
   justify-content: left;
   min-width: 70vmin;
+  padding-left: 2.5vmin;
+  padding-right: 2.5vmin;
 }
 
 .experience-img {
   justify-content: right;
+}
+
+.about{
+  padding-left: 2.5vmin;
+  padding-right: 2.5vmin;
+}
+
+.pub {
+  margin-top: 2.5vmin;
+  padding-left: 2.5vmin;
+  padding-right: 2.5vmin;
 }
 
 @keyframes App-logo-spin {

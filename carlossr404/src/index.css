@@ -17,6 +17,7 @@ code {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2.5vmin;
 }
 
 .banner-image{
