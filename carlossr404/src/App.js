@@ -63,7 +63,7 @@ function App() {
           date={"June 2021 - August 2021"}
           desc={desc_VISITING}/>
         </div>
-        <img src="" className='experience-img'/>
+        <img src="" alt='' className='experience-img'/>
       </p>
 
       <p>
