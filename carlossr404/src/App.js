@@ -1,6 +1,6 @@
 import './App.css';
 import {Banner, Experience} from './Functions.js';
-import {FaLinkedin, FaGithub, FaAlignCenter} from 'react-icons/fa';
+import {FaLinkedin, FaGithub} from 'react-icons/fa';
 
 
 function App() {
