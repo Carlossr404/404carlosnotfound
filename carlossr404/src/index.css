@@ -15,14 +15,20 @@ code {
 .banner {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 2.5vmin;
 }
 
+.banner-header{
+  align-self: center;
+  text-align: center;
+}
+
 .banner-image{
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  width: 1000px;
 }
 
 .exp-block{
