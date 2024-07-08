@@ -25,7 +25,7 @@ function App() {
     ". . . "
   ];
 
-  let bio = "Multi-talented software developer experienced in Virtual and Augmented Reality Development, 3D modeling, Unity and more. Looking for my next challenge!";
+  let bio = "Multi-talented software developer experienced in Virtual and Augmented Reality Development, 3D modeling, Unity and more. Looking for my next challenging role!";
 
 
   //Actual Website 
