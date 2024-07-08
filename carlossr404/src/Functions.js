@@ -9,28 +9,22 @@ export function Banner(){
     return(
         <Carousel data-bs-theme="dark" className='banner'>
             <Carousel.Item onClick={() => window.location.replace("/#exp")}>
-                <div className='banner-image'>
-                    <img src='blank.jpg' alt='First Slide'/>
+                <h1 className='banner-header'>EXPERIENCE</h1>
+                <div>
+                    <img src='imgs/experience_img.png' alt='collage' className='banner-image'/>
                 </div>
-                <Carousel.Caption>
-                    <h1>Experience</h1>
-                </Carousel.Caption>
-            </Carousel.Item>
+                </Carousel.Item>
             <Carousel.Item onClick={() => window.location.replace("/#projects")}>
+                <h1 className='banner-header'>PROJECTS</h1>
                 <div className='banner-image'>
                     <img src='blank.jpg' alt='Second Slide'/>
                 </div>
-                <Carousel.Caption>
-                    <h1>Projects</h1>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item onClick={() => window.location.replace("/#pubs")}>
+                <h1 className='banner-header'>PUBLICATIONS</h1>
                 <div className='banner-image'>
                     <img src='blank.jpg' alt='Third Slide'/>
                 </div>
-                <Carousel.Caption>
-                    <h1>Publications</h1>
-                </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
     );

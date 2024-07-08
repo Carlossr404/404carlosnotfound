@@ -1,5 +1,6 @@
 import './App.css';
-import {Banner, Experience} from './Functions.js'
+import {Banner, Experience} from './Functions.js';
+import {FaLinkedin, FaGithub, FaAlignCenter} from 'react-icons/fa';
 
 
 function App() {
@@ -24,23 +25,32 @@ function App() {
     ". . . "
   ];
 
+  let bio = "Multi-talented software developer experienced in Virtual and Augmented Reality Development, 3D modeling, Unity and more. Looking for my next challenging role!";
+
 
   //Actual Website 
   return (
     <div className="App">
 
       <h1 className='App-header'>
-        <div style={{textAlign: 'left'}} onClick={() => window.location.replace("/#home")}>Carlossr404</div>
+        <div className='Carlossr404' onClick={() => window.location.replace("/#home")}>Carlossr404</div>
+        <div className='App-header-right'>
+          <a href='https://www.linkedin.com/in/carlos-salas-rosales-68b423226/' className='icon'><FaLinkedin/></a>
+          <a href='https://github.com/Carlossr404' className='icon'><FaGithub/></a>
+        </div>
       </h1>
 
-      <Banner id="home"/>
-      
-      <p>
-        <h2 className='h2'>About</h2>
-        <div className='about'>This is a small bio about me (Carlos)</div>
-      </p>
+      <div id= 'home' className='about'>
+        <div>
+          <img className= 'profile-pic' src='imgs/salasrosales_img.jpg' alt='Carlos Salas Rosales'/>
+        </div>
+        <p className='name'>Carlos Salas Rosales Jr.</p>
+        <p className='bio'>{bio}</p>
+      </div>
 
-      <p>
+      <Banner/>
+
+      <div>
         <h2 id="exp" className='h2'>Experience</h2>
         <div className='experience-block'>
           <Experience 
@@ -68,13 +78,13 @@ function App() {
           desc={desc_VISITING}/>
         </div>
         <img src="" alt='' className='experience-img'/>
-      </p>
+      </div>
 
-      <p>
+      <div>
         <h2 id="projects" className='h2'>Projects</h2>
-      </p>
+      </div>
 
-      <p>
+      <div>
         <h2 id="pubs" className='h2'>Publications</h2>
         <div className='pub'>
           <a href='https://dl.acm.org/doi/abs/10.1145/3449067'>Estimating Distance in Action Space in Augmented Reality</a>
@@ -91,7 +101,7 @@ function App() {
           <br/>
           <text>IEEE Virtual Reality 2019 | <a href='docs/2019_SalasRosales_IEEEVR_Distance.pdf'>PDF</a></text>
         </div>  
-      </p>
+      </div>
 
     </div>
   );

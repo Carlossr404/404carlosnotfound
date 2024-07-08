@@ -19,11 +19,28 @@
 .App-header {
   display: flex;
   flex-direction: row;
-  align-items: left;
-  justify-content: left;
   position: sticky;
   top: 0;
-  background-color: #a800e6;
+  padding-bottom: 1%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  background-color: #690090;
+}
+
+.Carlossr404{
+  text-align: Left;
+}
+
+.App-header-right{
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: right;
+}
+
+.icon{
+  padding-left: 10%;
+  color: white;
 }
 
 .App-link {
@@ -35,8 +52,23 @@
   height: 40vmin;
 }
 
+.profile-pic{
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+}
+
+.name{
+  padding-top: 1%;
+  text-align: center;
+  font-style: italic;
+  font-size: 50px;
+  font-family: 'Brush Script MT', cursive;
+}
+
 .h2 {
   text-decoration: underline;
+  background-color: #690090;
 }
 
 .experience-block {
@@ -47,12 +79,23 @@
 }
 
 .experience-img {
-  justify-content: right;
+  justify-content: center;
 }
 
 .about{
   padding-left: 2.5vmin;
   padding-right: 2.5vmin;
+  padding-bottom: 5%;
+  padding-top: 2.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bio {
+  padding-left: 5%;
+  padding-top: 2.5%;
+  text-align: center;
 }
 
 .pub {
