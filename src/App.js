@@ -42,7 +42,8 @@ function App() {
 
       <div id= 'home' className='about'>
         <div>
-          <img className= 'profile-pic' src='imgs/salasrosales_img.jpg' alt='Carlos Salas Rosales'/>
+          <img className= 'profile-pic' src='imgs/
+          salasrosales_img.jpg' alt='Carlos Salas Rosales'/>
         </div>
         <p className='name'>Carlos Salas Rosales Jr.</p>
         <p className='bio'>{bio}</p>
@@ -87,6 +88,10 @@ function App() {
       <div>
         <h2 id="pubs" className='h2'>Publications</h2>
         <div className='pub'>
+          <div>
+            <img src="imgs/2021_Gagnon_Fig1" alt=''/>
+            <img src='imgs/2021_Gagnon_Fig1b' alt='' />
+          </div>
           <a href='https://dl.acm.org/doi/abs/10.1145/3449067'>Estimating Distance in Action Space in Augmented Reality</a>
           <br/>
           <text>Holly C. Gagnon, <u>Carlos Salas Rosales</u>, Ryan Mileris, Jeanine K. Stefanucci, Sarah H. Creem-Regehr, and Robert E. Bodenheimer</text>
