@@ -98,10 +98,25 @@
   text-align: center;
 }
 
-.pub {
-  margin-top: 2.5vmin;
-  padding-left: 2.5vmin;
-  padding-right: 2.5vmin;
+.pub{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5%;
+}
+
+.pub-section {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.pub-img-section{
+  display: flex;
+  flex-direction: row;
+}
+
+.pub-img{
+  width: 150px;
+  height: 150px;
 }
 
 @keyframes App-logo-spin {

@@ -87,23 +87,30 @@ function App() {
       <div>
         <h2 id="pubs" className='h2'>Publications</h2>
         <div className='pub'>
-          <div>
-            <img src="imgs/2021_Gagnon_Fig1" alt=''/>
-            <img src='imgs/2021_Gagnon_Fig1b' alt='' />
+          <div className='pub-img-section'>
+            <img src="imgs/2021_Gagnon_Fig1.png" alt='' className='pub-img'/>
+            <img src='imgs/2021_Gagnon_Fig1b.png' alt='' className='pub-img'/>
           </div>
-          <a href='https://dl.acm.org/doi/abs/10.1145/3449067'>Estimating Distance in Action Space in Augmented Reality</a>
-          <br/>
-          <text>Holly C. Gagnon, <u>Carlos Salas Rosales</u>, Ryan Mileris, Jeanine K. Stefanucci, Sarah H. Creem-Regehr, and Robert E. Bodenheimer</text>
-          <br/>
-          <text>ACM Transactions on Applied Perception | <a href='docs/2021_Gagnon_ACM_Estimating.pdf'>PDF</a></text>
-          <br/>
+          <div className='pub-section'>
+            <a href='https://dl.acm.org/doi/abs/10.1145/3449067'>Estimating Distance in Action Space in Augmented Reality</a>
+            <br/>
+            <text>Holly C. Gagnon, <u>Carlos Salas Rosales</u>, Ryan Mileris, Jeanine K. Stefanucci, Sarah H. Creem-Regehr, and Robert E. Bodenheimer</text>
+            <br/>
+            <text>ACM Transactions on Applied Perception | <a href='docs/2021_Gagnon_ACM_Estimating.pdf'>PDF</a></text>
+            <br/>
+          </div>
         </div>
         <div className='pub'>
-          <a href='https://ieeexplore.ieee.org/abstract/document/8798095'>Distance Judgments to On- and Off Ground Objects in Augmented Reality</a>
-          <br/>
-          <text><u>Carlos Salas Rosales</u>, Grant Pointon, Haley Adams, Jeanine Stefanucci, Sarah Creem-Regehr, William B. Thompson, and Bobby Bodenheimer</text>
-          <br/>
-          <text>IEEE Virtual Reality 2019 | <a href='docs/2019_SalasRosales_IEEEVR_Distance.pdf'>PDF</a></text>
+          <div>
+            <img src='2019_SalasRosales_Fig2.png' alt='' className='pub-img'/>
+          </div>
+          <div className='pub-section'>
+            <a href='https://ieeexplore.ieee.org/abstract/document/8798095'>Distance Judgments to On- and Off Ground Objects in Augmented Reality</a>
+            <br/>
+            <text><u>Carlos Salas Rosales</u>, Grant Pointon, Haley Adams, Jeanine Stefanucci, Sarah Creem-Regehr, William B. Thompson, and Bobby Bodenheimer</text>
+            <br/>
+            <text>IEEE Virtual Reality 2019 | <a href='docs/2019_SalasRosales_IEEEVR_Distance.pdf'>PDF</a></text>
+          </div>
         </div>  
       </div>
 
