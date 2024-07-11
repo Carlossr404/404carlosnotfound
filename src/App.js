@@ -42,8 +42,7 @@ function App() {
 
       <div id= 'home' className='about'>
         <div>
-          <img className= 'profile-pic' src='imgs/
-          salasrosales_img.jpg' alt='Carlos Salas Rosales'/>
+          <img className= 'profile-pic' src='imgs/salasrosales_img.jpg' alt='Carlos Salas Rosales'/>
         </div>
         <p className='name'>Carlos Salas Rosales Jr.</p>
         <p className='bio'>{bio}</p>
