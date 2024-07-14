@@ -25,33 +25,50 @@ function App() {
     ". . . "
   ];
 
-  let bio = "Multi-talented software developer experienced in Virtual and Augmented Reality Development, 3D modeling, Unity and more. Looking for my next challenging role!";
+  let about = "Multi-talented software developer experienced in Virtual and Augmented Reality Development, 3D modeling, Unity and more. Looking for my next challenging role!"; 
 
+  let exp_link= <a href='/#exp'>Experience</a>
+  let pub_link= <a href='/#pubs'>Publications</a>
+
+  const bio = [
+    "I excel in teamwork and am adaptable to various work environemtns. I enjoy learning new things and am currently searching for a long-term position where I can continue to hone my skills as a developer. I look forward to working in a challenging position where I can contribute to the company's goals while enhancing my abilities to push the boundary of current technologies.",
+    "If you are in need of an experienced software developer and/or want to know more, feel free to contact me via email at: "
+  ]
 
   //Actual Website 
   return (
     <div className="App">
 
-      <h1 className='App-header'>
+      <div className='App-header'>
         <div className='Carlossr404' onClick={() => window.location.replace("/#home")}>Carlossr404</div>
         <div className='App-header-right'>
           <a href='https://www.linkedin.com/in/carlos-salas-rosales-68b423226/' className='icon'><FaLinkedin/></a>
           <a href='https://github.com/Carlossr404' className='icon'><FaGithub/></a>
         </div>
-      </h1>
+      </div>
 
-      <div id= 'home' className='about'>
+      <div id= 'home' className='home'>
         <div>
           <img className= 'profile-pic' src='imgs/salasrosales_img.jpg' alt='Carlos Salas Rosales'/>
         </div>
         <p className='name'>Carlos Salas Rosales Jr.</p>
-        <p className='bio'>{bio}</p>
+        <p className='home-text'>{about}</p>
       </div>
 
-      <Banner/>
+      <div id='#bio' className='bio'>
+        <div>
+          <img className='bio-img' src='imgs/salasrosales_bio_img.jpg' alt='Carlos Salas Rosales Jr outside Rhodes College library'/>
+        </div>
+        <div className='bio-text'>
+          <h2 className='bio-heading'>About me:</h2>
+          <p>I am a Mexican-American nerd and recent Rhodes College Alumn with a Bachelor's of Science in Computer Science. I am especially passionate about Virtual and Augmented Reality development. Through my work experiences at Vanderbilt University and Rhodes College (see more in the {exp_link} and {pub_link} sections), I have mastered building XR environments in Unity. I also have a well-rounded education in AI, Data Mining, Parallel Programming, Web Development, and more.</p>
+          <p>{bio[0]}</p>
+          <p>{bio[1]}<a href="mailto:carlossr404@gmail.com">carlossr404@gmail.com</a></p>
+        </div>
+      </div>
 
       <div>
-        <h2 id="exp" className='h2'>Experience</h2>
+        <h2 id="exp" className='section-heading'>Experience</h2>
         <div className='experience-block'>
           <Experience 
           logo={'imgs/osh_logo.jpeg'}
@@ -81,11 +98,13 @@ function App() {
       </div>
 
       <div>
-        <h2 id="projects" className='h2'>Projects</h2>
+        <h2 id="projects" className='section-heading'>Projects</h2>
       </div>
 
+      <Banner/>
+
       <div>
-        <h2 id="pubs" className='h2'>Publications</h2>
+        <h2 id="pubs" className='section-heading'>Publications</h2>
         <div className='pub'>
           <div className='pub-img-section'>
             <img src="imgs/2021_Gagnon_Fig1.png" alt='' className='pub-img'/>
@@ -102,7 +121,7 @@ function App() {
         </div>
         <div className='pub'>
           <div>
-            <img src='2019_SalasRosales_Fig2.png' alt='' className='pub-img'/>
+            <img src='imgs/2019_SalasRosales_Fig2.png' alt='' className='pub-img'/>
           </div>
           <div className='pub-section'>
             <a href='https://ieeexplore.ieee.org/abstract/document/8798095'>Distance Judgments to On- and Off Ground Objects in Augmented Reality</a>

@@ -28,7 +28,9 @@
 }
 
 .Carlossr404{
-  text-align: Left;
+  font-weight: bold;
+  font-size: xx-large;
+  text-align: left;
 }
 
 .App-header-right{
@@ -36,6 +38,7 @@
   display: flex;
   flex-direction: row;
   align-content: right;
+  font-size: xx-large;
 }
 
 .icon{
@@ -47,9 +50,16 @@
   color: #61dafb;
 }
 
-.Carousel-image {
-  width: 100vmin;
-  height: 40vmin;
+.home{
+  background-image: url('../public/imgs/background_img.jpg');
+  background-size: cover;
+  padding-left: 2.5vmin;
+  padding-right: 2.5vmin;
+  padding-bottom: 5%;
+  padding-top: 2.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-pic{
@@ -60,48 +70,69 @@
 
 .name{
   padding-top: 1%;
+  padding-bottom: 1%;
   text-align: center;
   font-style: italic;
   font-size: 50px;
   font-family: 'Brush Script MT', cursive;
 }
 
-.h2 {
-  text-decoration: underline;
-  background-color: #690090;
+.home-text {
+  text-align: center;
+  padding-bottom: 2.5%;
+}
+
+.bio{
+  display: flex;
+  flex-direction: row;
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+}
+
+.bio-img{
+  padding-top: 2.5%;
+  margin-left: 10%;
+  width: 270px;
+  height: 480px;
+}
+
+.bio-text{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: calc(8px + 2vmin);
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Carousel-image {
+  width: 100vmin;
+  height: 40vmin;
+}
+
+.bio-heading {
+  padding-bottom: 2.5%;
+}
+
+.section-heading{
+  padding-left: 1%;
 }
 
 .experience-block {
   justify-content: left;
-  min-width: 70vmin;
-  padding-left: 2.5vmin;
-  padding-right: 2.5vmin;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
 }
 
 .experience-img {
   justify-content: center;
 }
 
-.about{
-  padding-left: 2.5vmin;
-  padding-right: 2.5vmin;
-  padding-bottom: 5%;
-  padding-top: 2.5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.bio {
-  padding-left: 5%;
-  padding-top: 2.5%;
-  text-align: center;
-}
-
 .pub{
   display: flex;
   flex-direction: row;
   padding-bottom: 5%;
+  padding-left: 2.5%;
 }
 
 .pub-section {
