@@ -150,6 +150,30 @@
   height: 150px;
 }
 
+.contact{
+  display: flex;
+  flex-direction: row;
+  background-color: #434343;
+}
+
+.contact-info{
+  flex-direction: column;
+  text-align: center;
+  padding-left: 1%;
+}
+
+.contact-p{
+  padding-left: 1.5%;
+}
+
+.contact-heading{
+  text-align: left;
+}
+
+.contact-form{
+  flex-direction: column;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -27,6 +27,9 @@ function App() {
 
   let about = "Multi-talented software developer experienced in Virtual and Augmented Reality Development, 3D modeling, Unity and more. Looking for my next challenging role!"; 
 
+  //Links
+  let phone_number= <a href='tel:+16154243498'>+1 (615) 424-3498</a>
+  let email= <a href='mailto:carlossr404@gmail.com'>carlossr404@gmail.com</a>
   let exp_link= <a href='/#exp'>Experience</a>
   let pub_link= <a href='/#pubs'>Publications</a>
 
@@ -63,7 +66,7 @@ function App() {
           <h2 className='bio-heading'>About me:</h2>
           <p>I am a Mexican-American nerd and recent Rhodes College Alumn with a Bachelor's of Science in Computer Science. I am especially passionate about Virtual and Augmented Reality development. Through my work experiences at Vanderbilt University and Rhodes College (see more in the {exp_link} and {pub_link} sections), I have mastered building XR environments in Unity. I also have a well-rounded education in AI, Data Mining, Parallel Programming, Web Development, and more.</p>
           <p>{bio[0]}</p>
-          <p>{bio[1]}<a href="mailto:carlossr404@gmail.com">carlossr404@gmail.com</a></p>
+          <p>{bio[1]}{email}</p>
         </div>
       </div>
 
@@ -131,6 +134,17 @@ function App() {
             <text>IEEE Virtual Reality 2019 | <a href='docs/2019_SalasRosales_IEEEVR_Distance.pdf'>PDF</a></text>
           </div>
         </div>  
+      </div>
+
+      <div id='contact' className='contact'>
+        <div className='contact-info'>
+          <h2 className='contact-heading'>Contact Me</h2>
+          <p className='contact-p'>Interested or have a question? Feel free to reach out via call, text, or email:</p>
+          <p className='contact-p'> {phone_number} | {email} </p>
+        </div>
+        <div className='contact-form'>
+
+        </div>
       </div>
 
     </div>
